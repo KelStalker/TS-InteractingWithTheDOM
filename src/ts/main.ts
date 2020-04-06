@@ -3,11 +3,11 @@ const myInput: HTMLInputElement = document.querySelector('[name="list=item"]');
 const myList: HTMLElement = document.querySelector("ul");
 
 myform.addEventListener("submit", (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    const formValue: string = myInput.value;
-    const newListItem: HTMLElement = document.createElement( 'LI');
-    newListItem.textContent = formValue; //populate the element
+  const formValue: string = myInput.value;
+  const newListItem: HTMLElement = document.createElement("LI");
+  newListItem.textContent = formValue; //populate the element
 
-    myList.appendChild( newListItem );
+  myList.appendChild(newListItem);
 });
